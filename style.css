@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background: transparent;
+    font-family: inherit;
+}
+  
+ol,
+ul,
+li {
+    list-style: none;
+    display: block;
+}
+  
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+  
+a img {
+    border: none;
+}
+  
+button,
+a {
+    cursor: pointer;
+    color: inherit;
+}
+  
+textarea {
+    resize: none;
+}
+  
+button,
+textarea,
+select {
+    -moz-appearance: none !important;
+    appearance: none !important;
+    -webkit-appearance: none !important;
+    border-radius: 0;
+}
+
+body{
+    background-color: #c0ebf9;
+    margin-top: 15vh;
+}
+
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+    color: #467745;
+    margin-bottom: 20px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+input[type='text']{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    width: 600px;
+    height: 64px;
+    background-color: white;
+    color: #467745;
+    padding-left: 20px;
+}
+
+textarea{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    width: 600px;
+    height: 120px;
+    background-color: white;
+    color: #467745;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.checkbox-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.checkbox{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #467745;
+}
+
+button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 280px;
+    height: 80px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 21px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    background-color: #467745;
+    color: #c0ebf9;
+}
+
+@media screen and (max-width: 640px){
+    h1{
+        margin-left: 20px;
+        text-align: left;
+    }
+    input[type='text'], textarea{
+        width: calc(100% - 40px);
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .innerbox{
+        margin-left: 20px;
+    }
+}
